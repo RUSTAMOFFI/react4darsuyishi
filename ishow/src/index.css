@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: italic;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #e6f2ec 60%, #252525 40%);
+}
+.navbar {
+  width: 90%;
+  padding-top: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.7rem;
+  justify-content: space-between;
+  gap: 90px;
+}
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+a:hover {
+  border-bottom: 1px solid rgba(0, 8, 255, 1);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+button {
+  font-size: 1.7rem;
+  padding: 15px;
+  background-color: #2750cb;
+  border: none;
+}
+
+.header {
+  margin: auto;
+  width: 90%;
+  height: 87.7vh;
+  position: relative;
+  z-index: 6;
+}
+.car {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+  position: relative;
+  z-index: 6;
+}
+.car button {
+  width: 280px;
+  margin-top: -250px;
+}
+
+.catigory {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  z-index: 6;
+}
+.about {
+  color: white;
+}
+.about p:nth-child(1) {
+  font-size: 1.8rem;
+}
+.about p:nth-child(2) {
+  line-height: 150px;
+  font-size: 1.4rem;
+}
+.lines {
+  margin-top: -117px;
+  display: flex;
+  justify-content: space-between;
+  width: 231px;
+  position: absolute;
+  top: 0;
+  right: 300px;
+  z-index: -1;
+}
+.line {
+  width: 50px;
+  background-color: blue;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 767px;
+    margin: auto;
+  }
+  .car {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -100px;
+  }
+  .car button {
+    margin-top: 0;
+    padding: 0;
+  }
+  .car img {
+    transform: scale(0.6);
+    margin-top: -100px;
+  }
+  .lines {
+    display: none;
+  }
+  .catigory{
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 425px) {
+
+  .navbar {
+    justify-content: center;
+    width: 100%;
+  }
+  button {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+  .car img {
+    transform: scale(0.4);
+  }
+  .catigory {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .about p:nth-child(1) {
+    font-size: 1.4rem;
+  }
+  .about p:nth-child(2) {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+    @media (max-width: 375px){
+    .navbar{
+
+        width: 374px;
+
+    }
+    .header{
+
+        width: 374px;
+    }
+    .catigory{
+        margin-top: -70px;
+        gap: 10px;
+    }
+    .about p:nth-child(2) {
+        line-height: 50px;
+    }
+}
